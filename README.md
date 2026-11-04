@@ -6,21 +6,24 @@ It is a plain static site (`index.html`, `styles.css`, `script.js`) with no buil
 
 ## Swapping in real photos
 
-Every image is a placeholder file in `images/`. To replace one, drop in a real photo and update the matching `src` in `index.html` (for example `images/kitchen-after.svg` becomes `images/kitchen-after.jpg`). Also update its `alt` text, and the `width`/`height` attributes to the new photo's size.
+Right now the site uses free stock photos from [Unsplash](https://unsplash.com/license), linked straight from Unsplash, so the mockup looks like the finished site. The only real photo is `images/elizabeth.jpg` in the About section.
 
-| File | Where it appears |
+To swap in a real photo, add it to `images/` (e.g. `images/kitchen-after.jpg`) and change that `<img>` tag's `src` in `index.html` from the Unsplash URL to the new file. Also update its `alt` text, and the `width` and `height` attributes to the new photo's size.
+
+| Slot in `index.html` | Shape |
 | --- | --- |
-| `hero.svg` | Top of the home page (tall, portrait crop) |
-| `service-remodel.svg`, `service-paint.svg`, `service-refresh.svg` | Service cards (4:3) |
-| `kitchen-before/after`, `bath-before/after`, `exterior-before/after` | Portfolio before-and-after pairs (4:3) |
-| `gallery-entry.svg`, `gallery-dining.svg` | Extra portfolio photos (4:3) |
-| `elizabeth.jpg` | About section photo (real photo, square crop) |
+| Hero image at the top | Tall, portrait crop |
+| Three service cards | 4:3 |
+| Portfolio before-and-after pairs (kitchen, bath, exterior) | 4:3 |
+| Two extra portfolio photos | 4:3 |
+| About photo (`images/elizabeth.jpg`) | Square |
 
 Photos are cropped with `object-fit: cover`, so close-enough proportions work. Exporting around 1600px wide as JPG or WebP keeps the page fast.
 
 ## Still placeholder before launch
 
-- Testimonials (three quotes in the Testimonials section)
-- Phone number and email in the Contact section
+- Stock photos (see above). The before-and-after pairs are different stock homes, not the same room.
+- Testimonials are made-up samples. Replace them with real client reviews before launch.
+- The phone number and email in the Contact section are made up.
 - The inquiry form only shows a thank-you message. Connect it to a form service such as Formspree or Netlify Forms so inquiries reach Elizabeth's inbox.
 - Project names and cities in the Portfolio section

@@ -183,7 +183,7 @@ p { margin: 0 0 1em; }
 .contact-list span {
   display: block; font-size: .7rem; letter-spacing: .22em; text-transform: uppercase; color: var(--brass); margin-bottom: 2px;
 }
-.contact-list a { text-decoration: none; }
+.contact-list a { text-decoration: none; overflow-wrap: anywhere; }
 .contact-list a:hover { color: var(--brass); }
 
 .inquiry { background: rgba(247, 244, 238, .06); border: 1px solid rgba(247, 244, 238, .16); border-radius: var(--radius); padding: 36px; }
