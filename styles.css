@@ -166,14 +166,6 @@ p { margin: 0 0 1em; }
   position: absolute; top: 14px; left: 14px; z-index: 1; background: var(--paper); color: var(--ink);
   font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; padding: 5px 12px; border-radius: 2px;
 }
-/* Mockup "before" shots: the after photo with a dated, tired treatment so the
-   pair reads as the same space. Remove these classes once real before photos
-   are in. */
-.is-before img { filter: sepia(.45) saturate(.55) brightness(.86) contrast(.88) hue-rotate(-6deg); }
-.is-before::after {
-  content: ""; position: absolute; inset: 0; border-radius: var(--radius); pointer-events: none;
-  background: rgba(150, 120, 70, .18); mix-blend-mode: multiply;
-}
 .ba h3 span {
   font-family: var(--sans); font-size: .75rem; letter-spacing: .2em; text-transform: uppercase;
   color: var(--cedar); margin-left: 10px; vertical-align: middle;
