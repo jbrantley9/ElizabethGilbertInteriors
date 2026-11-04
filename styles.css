@@ -163,9 +163,18 @@ p { margin: 0 0 1em; }
 .ba-pair figure, .gallery figure { margin: 0; position: relative; }
 .ba-pair img, .gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
 .ba-pair figcaption {
-  position: absolute; top: 14px; left: 14px; background: var(--paper); color: var(--ink);
+  position: absolute; top: 14px; left: 14px; z-index: 1; background: var(--paper); color: var(--ink);
   font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; padding: 5px 12px; border-radius: 2px;
 }
+/* Mockup "before" shots: the after photo with a dated, tired treatment so the
+   pair reads as the same space. Remove these classes once real before photos
+   are in. */
+.is-before img { filter: sepia(.45) saturate(.55) brightness(.86) contrast(.88) hue-rotate(-6deg); }
+.is-before::after {
+  content: ""; position: absolute; inset: 0; border-radius: var(--radius); pointer-events: none;
+  background: rgba(150, 120, 70, .18); mix-blend-mode: multiply;
+}
+.is-before-exterior img { filter: sepia(.7) saturate(.5) brightness(.82) contrast(.85) hue-rotate(-10deg); }
 .ba h3 span {
   font-family: var(--sans); font-size: .75rem; letter-spacing: .2em; text-transform: uppercase;
   color: var(--cedar); margin-left: 10px; vertical-align: middle;
