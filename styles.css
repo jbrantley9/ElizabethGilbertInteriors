@@ -163,7 +163,7 @@ p { margin: 0 0 1em; }
 .ba-pair figure, .gallery figure { margin: 0; position: relative; }
 .ba-pair img, .gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
 .ba-pair figcaption {
-  position: absolute; top: 14px; left: 14px; background: var(--paper); color: var(--ink);
+  position: absolute; top: 14px; left: 14px; z-index: 1; background: var(--paper); color: var(--ink);
   font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; padding: 5px 12px; border-radius: 2px;
 }
 /* Mockup "before" shots: the after photo with a dated, tired treatment so the
