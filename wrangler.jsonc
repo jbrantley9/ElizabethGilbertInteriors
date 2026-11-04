@@ -1,0 +1,9 @@
+// Cloudflare Workers config: serves this folder as a static site.
+// "name" must match the project name chosen in the Cloudflare dashboard.
+{
+  "name": "elizabethgilbertinteriors",
+  "compatibility_date": "2025-10-01",
+  "assets": {
+    "directory": "./"
+  }
+}
