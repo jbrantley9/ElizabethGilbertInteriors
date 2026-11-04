@@ -14,7 +14,7 @@ Every image is a placeholder file in `images/`. To replace one, drop in a real p
 | `service-remodel.svg`, `service-paint.svg`, `service-refresh.svg` | Service cards (4:3) |
 | `kitchen-before/after`, `bath-before/after`, `exterior-before/after` | Portfolio before-and-after pairs (4:3) |
 | `gallery-entry.svg`, `gallery-dining.svg` | Extra portfolio photos (4:3) |
-| `elizabeth.svg` | About section portrait (portrait crop) |
+| `elizabeth.jpg` | About section photo (real photo, square crop) |
 
 Photos are cropped with `object-fit: cover`, so close-enough proportions work. Exporting around 1600px wide as JPG or WebP keeps the page fast.
 
